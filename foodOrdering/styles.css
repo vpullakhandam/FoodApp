@@ -1,0 +1,48 @@
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid black;
+}
+.logo {
+  width: 100px;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+.nav-items > ul {
+  font-size: 24px;
+  display: flex;
+  /* padding top & bottom is 0px left and right is 20px */
+  list-style-type: none;
+}
+.nav-items > ul > li {
+  padding: 10px;
+  margin: 10px;
+}
+
+/* BODY */
+
+.search {
+  padding: 10px;
+}
+.resCard {
+  margin: 50px;
+  width: 200px;
+  padding: 5px;
+  border: 1px solid green;
+}
+.resCard:hover {
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.food-image {
+  width: 100%;
+  height:150px;
+}
+
+.resContainer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
