@@ -23,7 +23,13 @@
 /* BODY */
 
 .filter{
-  padding: 10px;
+  padding-top: 20px;
+  padding-left: 10px;
+}
+.fil-btn{
+  border-radius: 10px;
+  border-color: aqua;
+  cursor: pointer;
 }
 .resCard {
   margin: 50px;
@@ -43,6 +49,5 @@
 
 .resContainer {
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
 }

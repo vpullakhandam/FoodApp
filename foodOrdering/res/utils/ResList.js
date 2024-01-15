@@ -15,6 +15,7 @@ const ResList = [
         "Seafood",
         "Biryani",
       ],
+      avgRating:3.8,
       parentId: "482029",
       avgRatingString: "NEW",
       promoted: true,

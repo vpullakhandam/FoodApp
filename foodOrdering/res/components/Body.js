@@ -10,7 +10,7 @@ const Body = () => {
         <button
           className="fil-btn"
           onClick={() => {
-            const listOfNewRes = listOfRes.filter(
+            const listOfNewRes = ResList.filter(
               (res) => res.info.avgRating > 4
             );
             setListOfRes(listOfNewRes);
@@ -20,7 +20,7 @@ const Body = () => {
         </button>
       </div>
       <div className="resContainer">
-        {ResList.map((resData) => (
+        {listOfRes.map((resData) => (
           <ResCard key={resData.info.id} resData={resData} />
         ))}
       </div>
