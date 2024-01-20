@@ -1,11 +1,26 @@
 import ResList from "../utils/ResList";
-import ResCard from "./ResCard";
-import { useState } from "react";
+import ResCard from "../components/ResCard";
+import { useEffect, useState } from "react";
 
 const Body = () => {
   const [listOfRes, setListOfRes] = useState(ResList);
 
-  
+  const fetchData = async () => {
+    const data = await fetch(
+      "https://www.swiggy.com/mapi/homepage/getCards?lat=17.4671913&lng=78.64186959999999"
+    );
+    const json = await data.json();
+    console.log(json);
+    setListOfRes(
+      json.data.success?.cards[4]?.gridWidget?.gridElements?.infoWithStyle
+        ?.restaurants
+    );
+  };
+
+  useEffect(() => {
+    fetchData();
+  }, []);
+
   return (
     <div className="body">
       <div className="filter">
