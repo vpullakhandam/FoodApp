@@ -4,6 +4,8 @@ import { useState } from "react";
 
 const Body = () => {
   const [listOfRes, setListOfRes] = useState(ResList);
+
+  
   return (
     <div className="body">
       <div className="filter">
