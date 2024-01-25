@@ -12,7 +12,6 @@
 .nav-items > ul {
   font-size: 24px;
   display: flex;
-  /* padding top & bottom is 0px left and right is 20px */
   list-style-type: none;
 }
 .nav-items > ul > li {
