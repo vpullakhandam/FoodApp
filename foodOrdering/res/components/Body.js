@@ -7,7 +7,7 @@ const Body = () => {
 
   const fetchData = async () => {
     const data = await fetch(
-      "https://www.swiggy.com/mapi/homepage/getCards?lat=17.4671913&lng=78.64186959999999"
+      "https://corsproxy.org/?https://www.swiggy.com/mapi/homepage/getCards?lat=17.4671913&lng=78.64186959999999"
     );
     const json = await data.json();
     console.log(json);
